@@ -12,4 +12,4 @@
 srun gcc -std=c99 -fopenmp evaluar_func.c -o ahmdal.exe -lm
 
 export OMP_NUM_THREADS= #...
-srun ./ahmdal
+srun ./ahmdal.exe
