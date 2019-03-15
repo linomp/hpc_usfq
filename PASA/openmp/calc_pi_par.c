@@ -1,3 +1,5 @@
+// 
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -22,7 +24,8 @@ int main(void) {
 	gettimeofday(&t_i, NULL);
 
 	// hace y corre 2 copias (INCORRECTO)
-	/*#pragma omp parallel
+	// util para dentro del bloque hacer cosas distintas a partir del id del thread
+	/*#pragma omp parallel num_threads(2)
 	{
 		for (int i = 0; i<N-1; i++){ 
 			val = dx*fcn_cuarto(i*dx);
@@ -39,14 +42,13 @@ int main(void) {
 			cuartopi += val;
 	}
 	*/
-
-		
+ 
+	// ejecutar el for con unacopia local de esa variable y 
+	// sumar todas las copias locales al final
 	#pragma omp parallel for reduction(+: cuartopi)
 	for (int i = 0; i<N-1; i++){ 
 		cuartopi += dx*fcn_cuarto(i*dx);
-	}
-	
-	
+	} 
 
 	gettimeofday(&t_f, NULL);
 
