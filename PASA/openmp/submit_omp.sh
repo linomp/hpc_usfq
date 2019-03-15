@@ -9,7 +9,7 @@
 #SBATCH --time=1:00
 
 
-srun gcc -fopenmp evaluar_func.c -o ahmdal.exe
+srun gcc -std=c99 -fopenmp evaluar_func.c -o ahmdal.exe
 
 export OMP_NUM_THREADS= #...
 srun ./ahmdal
