@@ -26,7 +26,7 @@ __global__ void decrypt_kernel(int *d_input, int *d_output, int length)
 {
 	for (int i = 0; i< length; i++){
 		char x = d_input[i];
-		d_output[i] = 111*(x-B) % M; 
+		d_output[i] = modulo(111*(x-B), M); 
 	}
 }
 
