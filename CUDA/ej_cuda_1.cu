@@ -37,6 +37,7 @@ __global__ void decrypt_kernel(int *d_input, int *d_output, int length)
 __global__ void decrypt_multiblock_kernel(int *d_input, int *d_output, int length)
 {
 	// qué thread soy?
+	// aplicando offset porque ahora hay más bloques
 	int idx = blockDim.x * blockIdx.x + threadIdx.x;
 	// verificar, xq pueden lanzarse más hilos que caracteres
 	if( idx < length ){ 

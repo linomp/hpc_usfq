@@ -3,13 +3,14 @@
 #include <math.h>
 #include <sys/time.h>
 
-#define N 2048000
+//#define N 2048000
 
-int main(void)
+int main(int argc, char** argv)
 {
+  
+  long N = 2048000*(int) argv[0];
 
   float t_loop, t_total;
-
   struct timeval t_i, t_f, t_fh;
 
   double dx = 1.0 / (double)N;
@@ -17,7 +18,7 @@ int main(void)
   int iters = 1000000;
 
   gettimeofday(&t_i, NULL);
-#pragma omp parallel for reduction(+ \
+  #pragma omp parallel for reduction(+ \
                                    : cuartopi)
   for (int i = 0; i < N; ++i)
   {
