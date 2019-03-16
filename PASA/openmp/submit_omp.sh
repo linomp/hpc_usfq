@@ -25,3 +25,7 @@ srun ./ahmdal.exe 16
 
 export OMP_NUM_THREADS=32
 srun ./ahmdal.exe 32
+<<<<<<< HEAD
+=======
+
+>>>>>>> 865e6c0a1f920e85e9294e2b79445f6d741ea5c2

@@ -7,10 +7,15 @@
 
 int main(int argc, char** argv)
 {
+  
+  long N = 2048000*(int) argv[0];
 
 int mult = atoi(argv[1]);
   float t_loop, t_total;
+<<<<<<< HEAD
 long N = 2048000*mult;
+=======
+>>>>>>> 865e6c0a1f920e85e9294e2b79445f6d741ea5c2
   struct timeval t_i, t_f, t_fh;
 printf("%i %li\n", mult, N);
   double dx = 1.0 / (double)N;
@@ -18,7 +23,7 @@ printf("%i %li\n", mult, N);
   int iters = 1000000;
 
   gettimeofday(&t_i, NULL);
-#pragma omp parallel for reduction(+ \
+  #pragma omp parallel for reduction(+ \
                                    : cuartopi)
   for (int i = 0; i < N; ++i)
   {
