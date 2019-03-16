@@ -7,15 +7,16 @@
 
 int main(int argc, char** argv)
 {
-  
-  long N = 2048000*(int) argv[0];
-  int mult = atoi(argv[1]);
-
   float t_loop, t_total;
   struct timeval t_i, t_f, t_fh; 
+  
+  // Para hacerpruebas de escalabilidad debil
+  int mult = atoi(argv[1]);  
+  long N = 2048000*mult;
+
   double dx = 1.0 / (double)N;
   double cuartopi = 0;
-  int iters = 1000000;
+  int iters = 1000000;  
 
   gettimeofday(&t_i, NULL);
   #pragma omp parallel for reduction(+ \
