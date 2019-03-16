@@ -9,15 +9,10 @@ int main(int argc, char** argv)
 {
   
   long N = 2048000*(int) argv[0];
+  int mult = atoi(argv[1]);
 
-int mult = atoi(argv[1]);
   float t_loop, t_total;
-<<<<<<< HEAD
-long N = 2048000*mult;
-=======
->>>>>>> 865e6c0a1f920e85e9294e2b79445f6d741ea5c2
-  struct timeval t_i, t_f, t_fh;
-printf("%i %li\n", mult, N);
+  struct timeval t_i, t_f, t_fh; 
   double dx = 1.0 / (double)N;
   double cuartopi = 0;
   int iters = 1000000;
