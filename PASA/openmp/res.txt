@@ -1,26 +1,31 @@
-Pi = 3.141594
+2 4096000
+Pi = 3.141593
  h = -0.001273
-Tiempo parte paralela 34.613037 ms
-Tiempo parte serial 39.601074 ms
-Tiempo total  74.214111 ms
- Pi = 3.141594
+Tiempo parte paralela 60.914795 ms
+Tiempo parte serial 35.409180 ms
+Tiempo total  96.323975 ms
+ 4 8192000
+Pi = 3.141593
  h = -0.001273
-Tiempo parte paralela 17.468018 ms
-Tiempo parte serial 37.273926 ms
-Tiempo total  54.741943 ms
- Pi = 3.141594
+Tiempo parte paralela 60.000000 ms
+Tiempo parte serial 36.346924 ms
+Tiempo total  96.346924 ms
+ 8 16384000
+Pi = 3.141593
  h = -0.001273
-Tiempo parte paralela 10.513916 ms
-Tiempo parte serial 35.563965 ms
-Tiempo total  46.077881 ms
- Pi = 3.141594
+Tiempo parte paralela 60.312012 ms
+Tiempo parte serial 35.390137 ms
+Tiempo total  95.702148 ms
+ 16 32768000
+Pi = 3.141593
  h = -0.001273
-Tiempo parte paralela 6.425049 ms
-Tiempo parte serial 35.834961 ms
-Tiempo total  42.260010 ms
- Pi = 3.141594
+Tiempo parte paralela 60.627930 ms
+Tiempo parte serial 35.384033 ms
+Tiempo total  96.011963 ms
+ 32 65536000
+Pi = 3.141593
  h = -0.001273
-Tiempo parte paralela 6.036865 ms
-Tiempo parte serial 35.698975 ms
-Tiempo total  41.735840 ms
+Tiempo parte paralela 74.873047 ms
+Tiempo parte serial 44.967041 ms
+Tiempo total  119.840088 ms
  

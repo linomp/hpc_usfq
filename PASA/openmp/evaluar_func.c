@@ -3,15 +3,16 @@
 #include <math.h>
 #include <sys/time.h>
 
-#define N 2048000
+//#define N 2048000
 
-int main(void)
+int main(int argc, char** argv)
 {
 
+int mult = atoi(argv[1]);
   float t_loop, t_total;
-
+long N = 2048000*mult;
   struct timeval t_i, t_f, t_fh;
-
+printf("%i %li\n", mult, N);
   double dx = 1.0 / (double)N;
   double cuartopi = 0;
   int iters = 1000000;
