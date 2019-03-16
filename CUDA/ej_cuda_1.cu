@@ -68,8 +68,8 @@ int main(int argc, char *argv[])
 	checkCUDAError("Input transfer to device");
 
 	// configurar la grilla de threads
-	dim3 blocksPerGrid (1, 1, 1) 
-	dim3 threadsPerBlock (N, 1, 1)
+	dim3 blocksPerGrid (1, 1, 1) ;
+	dim3 threadsPerBlock (N, 1, 1);
 
 	// ejecutar el kernel
 	decrypt_kernel <<< blocksPerGrid, threadsPerBlock >>>( d_input, d_output, length );
