@@ -23,10 +23,14 @@ __device__ int modulo(int a, int b){
 }
 
 __global__ void decrypt_kernel(int *d_input, int *d_output, int length)
-{
-	for (int i = 0; i< length; i++){
-		char x = d_input[i];
-		d_output[i] = modulo(111*(x-B), M); 
+{ 
+	// qué thread soy?
+	int idx = threadIdx.x;
+	// verificar, xq pueden lanzarse más hilos que caracteres
+	if( idx < length ){ 
+		char x = d_input[idx];
+		// calcular y guardar valor en indice correspondiente en el buffer de salida
+		d_output[idx] = modulo(111*(x-B), M); 
 	}
 }
 
@@ -68,6 +72,8 @@ int main(int argc, char *argv[])
 	checkCUDAError("Input transfer to device");
 
 	// configurar la grilla de threads
+	// 
+//	dim3 blocksPerGrid ( , 1, 1) ;
 	dim3 blocksPerGrid (1, 1, 1) ;
 	dim3 threadsPerBlock (N, 1, 1);
 
