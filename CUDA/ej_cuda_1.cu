@@ -71,15 +71,22 @@ int main(int argc, char *argv[])
 	cudaMemcpy(d_input, h_input, size, cudaMemcpyHostToDevice);
 	checkCUDAError("Input transfer to device");
 
-	// configurar la grilla de threads
-	// 
-//	dim3 blocksPerGrid ( , 1, 1) ;
+	/* limitado a 1024 chars
+	// configurar la grilla de threads 
 	dim3 blocksPerGrid (1, 1, 1) ;
+	dim3 threadsPerBlock (N, 1, 1);
+	// ejecutar el kernel
+	decrypt_kernel <<< blocksPerGrid, threadsPerBlock >>>( d_input, d_output, length );
+	*/
+
+  // configurar la grilla de threads
+	dim3 blocksPerGrid ( (int) ceil(length/N), 1, 1) ;
 	dim3 threadsPerBlock (N, 1, 1);
 
 	// ejecutar el kernel
-	decrypt_kernel <<< blocksPerGrid, threadsPerBlock >>>( d_input, d_output, length );
+	decrypt_multiblock_kernel <<< blocksPerGrid, threadsPerBlock >>>( d_input, d_output, length );
 
+	// sólo para medir tiempos, porque el memcoy ya sincroniza internamente
 	cudaThreadSynchronize();
 	checkCUDAError("Kernel execution");
 
