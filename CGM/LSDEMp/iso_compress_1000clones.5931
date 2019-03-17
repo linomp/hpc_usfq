@@ -1,0 +1,1103 @@
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: compute-0-1
+--------------------------------------------------------------------------
+Using 1 nodes with 24 threads/node for a total of 24 processes.
+Running MainCycIso
+Using 1 node.
+max height: 255.893
+min height: 23.2271
+new min height: 0
+radius of grain at bottom: 27.1507
+new max height: 232.666
+Number of grains: 100
+kn = 30000
+mu = 0.65
+gdamping = 10000
+r = 71.9779
+v0: 5.43371e+06
+
+-----------------------------------------------------------------------------------------
+Timestep 1 of 60000 (0.00% complete, 0.01 minutes, ~479.46 remaining)
+height = 232.666
+top wall position:       0       0 232.666
+v/v0 = 1
+stress =  55.8031  18.3932  -2.3011  2.90057 -14.2555 -2.85981
+force on top wall = 0
+total kinetic energy = 0
+Pressure Applied: 0.0001275
+Grains Kn: 0.75
+Grains Ks: 0.675
+
+-----------------------------------------------------------------------------------------
+Timestep 101 of 60000 (0.17% complete, 1.14 minutes, ~678.70 remaining)
+height = 232.566
+top wall position:       0       0 232.566
+v/v0 = 1.16134
+stress =    0.281785    0.292018    0.257215   0.0476243 -0.00370503   -0.012382
+force on top wall = 0
+total kinetic energy = 9.63132e+06
+Pressure Applied: 0.0128775
+Grains Kn: 75.75
+Grains Ks: 68.175
+
+-----------------------------------------------------------------------------------------
+Timestep 201 of 60000 (0.34% complete, 2.21 minutes, ~658.40 remaining)
+height = 232.466
+top wall position:       0       0 232.466
+v/v0 = 1.27313
+stress =     0.268925     0.259615      0.25191    0.0308942   -0.0528881 -0.000204388
+force on top wall = 0
+total kinetic energy = 3.11206e+06
+Pressure Applied: 0.0256275
+Grains Kn: 150.75
+Grains Ks: 135.675
+
+-----------------------------------------------------------------------------------------
+Timestep 301 of 60000 (0.50% complete, 3.16 minutes, ~625.98 remaining)
+height = 232.366
+top wall position:       0       0 232.366
+v/v0 = 1.29974
+stress =   0.182796   0.145696   0.212223 -0.0079218 -0.0763138  0.0206265
+force on top wall = 0
+total kinetic energy = 1.30712e+06
+Pressure Applied: 0.0383775
+Grains Kn: 225.75
+Grains Ks: 203.175
+
+-----------------------------------------------------------------------------------------
+Timestep 401 of 60000 (0.67% complete, 3.99 minutes, ~593.70 remaining)
+height = 232.266
+top wall position:       0       0 232.266
+v/v0 = 1.28271
+stress =    0.125159    0.074486     0.12053 0.000897997   -0.039543  0.00656581
+force on top wall = 2670.03
+total kinetic energy = 616655
+Pressure Applied: 0.0511275
+Grains Kn: 300.75
+Grains Ks: 270.675
+
+-----------------------------------------------------------------------------------------
+Timestep 501 of 60000 (0.83% complete, 4.77 minutes, ~566.37 remaining)
+height = 232.166
+top wall position:       0       0 232.166
+v/v0 = 1.24594
+stress =  0.0377681   0.120171  0.0528905 -0.0458961 -0.0208627  0.0263987
+force on top wall = 524.703
+total kinetic energy = 351905
+Pressure Applied: 0.0638775
+Grains Kn: 375.75
+Grains Ks: 338.175
+
+-----------------------------------------------------------------------------------------
+Timestep 601 of 60000 (1.00% complete, 5.51 minutes, ~544.70 remaining)
+height = 232.066
+top wall position:       0       0 232.066
+v/v0 = 1.20849
+stress =   0.0295886    0.043517   0.0300702  0.00318574 -0.00145915 -0.00100923
+force on top wall = 3806.2
+total kinetic energy = 305172
+Pressure Applied: 0.0766275
+Grains Kn: 450.75
+Grains Ks: 405.675
+
+-----------------------------------------------------------------------------------------
+Timestep 701 of 60000 (1.17% complete, 6.24 minutes, ~527.64 remaining)
+height = 231.966
+top wall position:       0       0 231.966
+v/v0 = 1.16641
+stress =    0.130122   0.0215626   0.0103079   0.0151445 -0.00384966  0.00512724
+force on top wall = 0
+total kinetic energy = 133160
+Pressure Applied: 0.0893775
+Grains Kn: 525.75
+Grains Ks: 473.175
+
+-----------------------------------------------------------------------------------------
+Timestep 801 of 60000 (1.33% complete, 6.95 minutes, ~514.00 remaining)
+height = 231.866
+top wall position:       0       0 231.866
+v/v0 = 1.12445
+stress =   0.045048  0.0289685  0.0428604 0.00922117 -0.0116742  -0.007155
+force on top wall = 4763.18
+total kinetic energy = 87462.5
+Pressure Applied: 0.102127
+Grains Kn: 600.75
+Grains Ks: 540.675
+
+-----------------------------------------------------------------------------------------
+Timestep 901 of 60000 (1.50% complete, 7.67 minutes, ~503.31 remaining)
+height = 231.766
+top wall position:       0       0 231.766
+v/v0 = 1.08676
+stress =   0.0404935   0.0321445    0.021724   0.0173622  -0.0164028 -0.00729779
+force on top wall = 913.867
+total kinetic energy = 73344.1
+Pressure Applied: 0.114877
+Grains Kn: 675.75
+Grains Ks: 608.175
+
+-----------------------------------------------------------------------------------------
+Timestep 1001 of 60000 (1.67% complete, 8.40 minutes, ~494.89 remaining)
+height = 231.666
+top wall position:       0       0 231.666
+v/v0 = 1.05377
+stress =  0.0536993  0.0673035  0.0242925 0.00388027  0.0303305  0.0194391
+force on top wall = 564.379
+total kinetic energy = 49523.6
+Pressure Applied: 0.127627
+Grains Kn: 750.75
+Grains Ks: 675.675
+
+-----------------------------------------------------------------------------------------
+Timestep 1101 of 60000 (1.83% complete, 9.13 minutes, ~488.22 remaining)
+height = 231.566
+top wall position:       0       0 231.566
+v/v0 = 1.02876
+stress =     0.104971    0.0444517     0.019806 -0.000955267  -0.00439967    0.0223097
+force on top wall = 0
+total kinetic energy = 34381.7
+Pressure Applied: 0.140377
+Grains Kn: 825.75
+Grains Ks: 743.175
+
+-----------------------------------------------------------------------------------------
+Timestep 1201 of 60000 (2.00% complete, 9.86 minutes, ~482.86 remaining)
+height = 231.466
+top wall position:       0       0 231.466
+v/v0 = 1.01174
+stress =   0.0886161   0.0894061   0.0438494   0.0127034 -0.00571117  0.00898535
+force on top wall = 0
+total kinetic energy = 223532
+Pressure Applied: 0.153127
+Grains Kn: 900.75
+Grains Ks: 810.675
+
+-----------------------------------------------------------------------------------------
+Timestep 1301 of 60000 (2.17% complete, 10.60 minutes, ~478.47 remaining)
+height = 231.366
+top wall position:       0       0 231.366
+v/v0 = 0.999849
+stress =    0.023802   0.0219299   0.0200109   0.0014694  0.00622154 -0.00304769
+force on top wall = 106.628
+total kinetic energy = 102223
+Pressure Applied: 0.165877
+Grains Kn: 975.75
+Grains Ks: 878.175
+
+-----------------------------------------------------------------------------------------
+Timestep 1401 of 60000 (2.33% complete, 11.35 minutes, ~474.71 remaining)
+height = 231.266
+top wall position:       0       0 231.266
+v/v0 = 0.990755
+stress =    0.015412   0.0164841   0.0061365  0.00331733  0.00510262 -0.00727111
+force on top wall = 0
+total kinetic energy = 43702.6
+Pressure Applied: 0.178627
+Grains Kn: 1050.75
+Grains Ks: 945.675
+
+-----------------------------------------------------------------------------------------
+Timestep 1501 of 60000 (2.50% complete, 12.10 minutes, ~471.53 remaining)
+height = 231.166
+top wall position:       0       0 231.166
+v/v0 = 0.983214
+stress =   0.0380799   0.0130853  0.00595218 -0.00198613  0.00708604 -0.00876943
+force on top wall = 0
+total kinetic energy = 23026.8
+Pressure Applied: 0.191378
+Grains Kn: 1125.75
+Grains Ks: 1013.18
+
+-----------------------------------------------------------------------------------------
+Timestep 1601 of 60000 (2.67% complete, 12.85 minutes, ~468.75 remaining)
+height = 231.066
+top wall position:       0       0 231.066
+v/v0 = 0.977007
+stress =  0.0162487  0.0115704 0.00831224 0.00400303 0.00146597 0.00223901
+force on top wall = 0
+total kinetic energy = 11010
+Pressure Applied: 0.204127
+Grains Kn: 1200.75
+Grains Ks: 1080.67
+
+-----------------------------------------------------------------------------------------
+Timestep 1701 of 60000 (2.83% complete, 13.60 minutes, ~466.18 remaining)
+height = 230.966
+top wall position:       0       0 230.966
+v/v0 = 0.972115
+stress =  0.00969044   0.0147605  0.00199683 -0.00113427  0.00433857  0.00487553
+force on top wall = 436.581
+total kinetic energy = 6393.7
+Pressure Applied: 0.216877
+Grains Kn: 1275.75
+Grains Ks: 1148.17
+
+-----------------------------------------------------------------------------------------
+Timestep 1801 of 60000 (3.00% complete, 14.35 minutes, ~463.88 remaining)
+height = 230.866
+top wall position:       0       0 230.866
+v/v0 = 0.968254
+stress =  0.00410594  0.00301625  0.00263421  0.00158826 4.48222e-05  0.00162496
+force on top wall = 465.801
+total kinetic energy = 4270.46
+Pressure Applied: 0.229627
+Grains Kn: 1350.75
+Grains Ks: 1215.67
+
+-----------------------------------------------------------------------------------------
+Timestep 1901 of 60000 (3.17% complete, 15.11 minutes, ~461.78 remaining)
+height = 230.766
+top wall position:       0       0 230.766
+v/v0 = 0.965102
+stress =   0.00784823  0.000846162  0.000982014 -0.000121512   0.00165972  0.000384988
+force on top wall = 0
+total kinetic energy = 2241.14
+Pressure Applied: 0.242377
+Grains Kn: 1425.75
+Grains Ks: 1283.17
+
+-----------------------------------------------------------------------------------------
+Timestep 2001 of 60000 (3.33% complete, 15.87 minutes, ~459.93 remaining)
+height = 230.666
+top wall position:       0       0 230.666
+v/v0 = 0.962296
+stress =   0.00644274    0.0092101 -0.000954409  -0.00143969   0.00282543 -0.000246741
+force on top wall = 148.576
+total kinetic energy = 1400.05
+Pressure Applied: 0.255128
+Grains Kn: 1500.75
+Grains Ks: 1350.67
+
+-----------------------------------------------------------------------------------------
+Timestep 2101 of 60000 (3.50% complete, 16.63 minutes, ~458.22 remaining)
+height = 230.566
+top wall position:       0       0 230.566
+v/v0 = 0.959629
+stress = -0.00171613   0.0111199  -0.0023383 0.000451423  0.00090533  0.00042099
+force on top wall = 12.98
+total kinetic energy = 763.085
+Pressure Applied: 0.267877
+Grains Kn: 1575.75
+Grains Ks: 1418.17
+
+-----------------------------------------------------------------------------------------
+Timestep 2201 of 60000 (3.67% complete, 17.39 minutes, ~456.66 remaining)
+height = 230.466
+top wall position:       0       0 230.466
+v/v0 = 0.956966
+stress =  0.00322395   0.0113165 -0.00497493 -0.00117701  0.00395838  0.00472806
+force on top wall = 284.654
+total kinetic energy = 776.629
+Pressure Applied: 0.280627
+Grains Kn: 1650.75
+Grains Ks: 1485.67
+
+-----------------------------------------------------------------------------------------
+Timestep 2301 of 60000 (3.83% complete, 18.15 minutes, ~455.16 remaining)
+height = 230.366
+top wall position:       0       0 230.366
+v/v0 = 0.95438
+stress =   0.00207723   0.00932942   0.00246368  -0.00044761 -0.000679405   0.00237244
+force on top wall = 0
+total kinetic energy = 596.801
+Pressure Applied: 0.293377
+Grains Kn: 1725.75
+Grains Ks: 1553.17
+
+-----------------------------------------------------------------------------------------
+Timestep 2401 of 60000 (4.00% complete, 18.91 minutes, ~453.71 remaining)
+height = 230.266
+top wall position:       0       0 230.266
+v/v0 = 0.951837
+stress =  0.00353586  0.00637968  0.00227479 -0.00611864  -0.0019044   0.0103546
+force on top wall = 225.007
+total kinetic energy = 1050.36
+Pressure Applied: 0.306127
+Grains Kn: 1800.75
+Grains Ks: 1620.67
+
+-----------------------------------------------------------------------------------------
+Timestep 2501 of 60000 (4.17% complete, 19.67 minutes, ~452.29 remaining)
+height = 230.166
+top wall position:       0       0 230.166
+v/v0 = 0.949266
+stress =   0.00798282   0.00366127  8.23639e-05 -0.000330687   0.00228187 -0.000782878
+force on top wall = 0
+total kinetic energy = 899.442
+Pressure Applied: 0.318877
+Grains Kn: 1875.75
+Grains Ks: 1688.17
+
+-----------------------------------------------------------------------------------------
+Timestep 2601 of 60000 (4.33% complete, 20.43 minutes, ~450.93 remaining)
+height = 230.066
+top wall position:       0       0 230.066
+v/v0 = 0.946668
+stress =  0.00198528  0.00564462  0.00598769  0.00130564 0.000949771  0.00462108
+force on top wall = 262.161
+total kinetic energy = 533.938
+Pressure Applied: 0.331627
+Grains Kn: 1950.75
+Grains Ks: 1755.67
+
+-----------------------------------------------------------------------------------------
+Timestep 2701 of 60000 (4.50% complete, 21.20 minutes, ~449.64 remaining)
+height = 229.966
+top wall position:       0       0 229.966
+v/v0 = 0.94399
+stress =   0.00361929   0.00319321  0.000668535   0.00190578 -0.000693285  -0.00297465
+force on top wall = 323.209
+total kinetic energy = 580.023
+Pressure Applied: 0.344378
+Grains Kn: 2025.75
+Grains Ks: 1823.17
+
+-----------------------------------------------------------------------------------------
+Timestep 2801 of 60000 (4.67% complete, 21.96 minutes, ~448.45 remaining)
+height = 229.866
+top wall position:       0       0 229.866
+v/v0 = 0.941317
+stress =  0.00770327  0.00833148    0.011018 -0.00610842 -0.00615757  0.00717998
+force on top wall = 227.181
+total kinetic energy = 493.546
+Pressure Applied: 0.357127
+Grains Kn: 2100.75
+Grains Ks: 1890.67
+
+-----------------------------------------------------------------------------------------
+Timestep 2901 of 60000 (4.83% complete, 22.72 minutes, ~447.28 remaining)
+height = 229.766
+top wall position:       0       0 229.766
+v/v0 = 0.938669
+stress =   0.00341375     0.014619   0.00770399   0.00169913   0.00187346 -0.000548775
+force on top wall = 511.288
+total kinetic energy = 507.417
+Pressure Applied: 0.369878
+Grains Kn: 2175.75
+Grains Ks: 1958.17
+
+-----------------------------------------------------------------------------------------
+Timestep 3001 of 60000 (5.00% complete, 23.49 minutes, ~446.14 remaining)
+height = 229.666
+top wall position:       0       0 229.666
+v/v0 = 0.936021
+stress = -0.00251735  0.00126231  0.00354044 -0.00184972  0.00409207  -0.0055673
+force on top wall = 502.127
+total kinetic energy = 477.864
+Pressure Applied: 0.382627
+Grains Kn: 2250.75
+Grains Ks: 2025.67
+
+-----------------------------------------------------------------------------------------
+Timestep 3101 of 60000 (5.17% complete, 24.26 minutes, ~445.05 remaining)
+height = 229.566
+top wall position:       0       0 229.566
+v/v0 = 0.933388
+stress = 0.00584745   0.010426 0.00632755 0.00235416 0.00252445 0.00264488
+force on top wall = 223.282
+total kinetic energy = 448.422
+Pressure Applied: 0.395377
+Grains Kn: 2325.75
+Grains Ks: 2093.18
+
+-----------------------------------------------------------------------------------------
+Timestep 3201 of 60000 (5.33% complete, 25.02 minutes, ~444.02 remaining)
+height = 229.466
+top wall position:       0       0 229.466
+v/v0 = 0.930784
+stress =  0.000670238   0.00626984   0.00251727 -0.000215782 -0.000918107  0.000166637
+force on top wall = 101.57
+total kinetic energy = 874.904
+Pressure Applied: 0.408127
+Grains Kn: 2400.75
+Grains Ks: 2160.68
+
+-----------------------------------------------------------------------------------------
+Timestep 3301 of 60000 (5.50% complete, 25.79 minutes, ~443.06 remaining)
+height = 229.366
+top wall position:       0       0 229.366
+v/v0 = 0.928217
+stress =  0.00658586  0.00898935   0.0101853 -0.00294738 -0.00440911  0.00116958
+force on top wall = 635.117
+total kinetic energy = 542.869
+Pressure Applied: 0.420877
+Grains Kn: 2475.75
+Grains Ks: 2228.18
+
+-----------------------------------------------------------------------------------------
+Timestep 3401 of 60000 (5.67% complete, 26.57 minutes, ~442.11 remaining)
+height = 229.266
+top wall position:       0       0 229.266
+v/v0 = 0.925683
+stress = 0.00717523  0.0123622 0.00536019 0.00516254 0.00884497 0.00527569
+force on top wall = 516.92
+total kinetic energy = 714.179
+Pressure Applied: 0.433627
+Grains Kn: 2550.75
+Grains Ks: 2295.68
+
+-----------------------------------------------------------------------------------------
+Timestep 3501 of 60000 (5.83% complete, 27.34 minutes, ~441.19 remaining)
+height = 229.166
+top wall position:       0       0 229.166
+v/v0 = 0.923139
+stress =  0.0238212  0.0180625 0.00979025 0.00265091  0.0054023  0.0154718
+force on top wall = 251.507
+total kinetic energy = 650.167
+Pressure Applied: 0.446377
+Grains Kn: 2625.75
+Grains Ks: 2363.18
+
+-----------------------------------------------------------------------------------------
+Timestep 3601 of 60000 (6.00% complete, 28.11 minutes, ~440.28 remaining)
+height = 229.066
+top wall position:       0       0 229.066
+v/v0 = 0.920601
+stress = 0.00976941  0.0211323 0.00498674 0.00802393 0.00500728 0.00974437
+force on top wall = 484.776
+total kinetic energy = 852.478
+Pressure Applied: 0.459127
+Grains Kn: 2700.75
+Grains Ks: 2430.68
+
+-----------------------------------------------------------------------------------------
+Timestep 3701 of 60000 (6.17% complete, 28.89 minutes, ~439.41 remaining)
+height = 228.966
+top wall position:       0       0 228.966
+v/v0 = 0.918065
+stress =  0.00713833   0.0106612   0.0130396  0.00114034 -0.00350759  -0.0014341
+force on top wall = 476.386
+total kinetic energy = 1713.08
+Pressure Applied: 0.471877
+Grains Kn: 2775.75
+Grains Ks: 2498.18
+
+-----------------------------------------------------------------------------------------
+Timestep 3801 of 60000 (6.33% complete, 29.66 minutes, ~438.55 remaining)
+height = 228.866
+top wall position:       0       0 228.866
+v/v0 = 0.915567
+stress =  -0.00571513    0.0219177  -0.00322137   0.00109318 -0.000476042  -0.00273042
+force on top wall = 207.933
+total kinetic energy = 1038.35
+Pressure Applied: 0.484627
+Grains Kn: 2850.75
+Grains Ks: 2565.68
+
+-----------------------------------------------------------------------------------------
+Timestep 3901 of 60000 (6.50% complete, 30.44 minutes, ~437.73 remaining)
+height = 228.766
+top wall position:       0       0 228.766
+v/v0 = 0.913098
+stress =   0.0191416    0.020444   0.0194097  0.00210871 -0.00459857   0.0108776
+force on top wall = 510.573
+total kinetic energy = 2161.97
+Pressure Applied: 0.497377
+Grains Kn: 2925.75
+Grains Ks: 2633.18
+
+-----------------------------------------------------------------------------------------
+Timestep 4001 of 60000 (6.67% complete, 31.22 minutes, ~436.94 remaining)
+height = 228.666
+top wall position:       0       0 228.666
+v/v0 = 0.910636
+stress =  0.00310445  0.00667086  0.00710171  0.00755929   0.0108914 -0.00763989
+force on top wall = 868.181
+total kinetic energy = 1226.35
+Pressure Applied: 0.510127
+Grains Kn: 3000.75
+Grains Ks: 2700.68
+
+-----------------------------------------------------------------------------------------
+Timestep 4101 of 60000 (6.83% complete, 32.00 minutes, ~436.17 remaining)
+height = 228.566
+top wall position:       0       0 228.566
+v/v0 = 0.90817
+stress =   0.0160068  -0.0117253  0.00496441  -0.0145847 0.000269568 -0.00211027
+force on top wall = 312.417
+total kinetic energy = 1247.91
+Pressure Applied: 0.522877
+Grains Kn: 3075.75
+Grains Ks: 2768.18
+
+-----------------------------------------------------------------------------------------
+Timestep 4201 of 60000 (7.00% complete, 32.78 minutes, ~435.44 remaining)
+height = 228.466
+top wall position:       0       0 228.466
+v/v0 = 0.905721
+stress =  0.0173484 -0.0103322 0.00138498 -0.0107152  0.0069586  0.0058896
+force on top wall = 298.071
+total kinetic energy = 1783.93
+Pressure Applied: 0.535627
+Grains Kn: 3150.75
+Grains Ks: 2835.68
+
+-----------------------------------------------------------------------------------------
+Timestep 4301 of 60000 (7.17% complete, 33.57 minutes, ~434.74 remaining)
+height = 228.366
+top wall position:       0       0 228.366
+v/v0 = 0.903282
+stress =   0.0222879   0.0219578  -0.0135042  -0.0093315 -0.00208013  0.00795917
+force on top wall = 656.673
+total kinetic energy = 3742.19
+Pressure Applied: 0.548377
+Grains Kn: 3225.75
+Grains Ks: 2903.18
+
+-----------------------------------------------------------------------------------------
+Timestep 4401 of 60000 (7.33% complete, 34.36 minutes, ~434.05 remaining)
+height = 228.266
+top wall position:       0       0 228.266
+v/v0 = 0.900856
+stress =  0.00880516  0.00980246   0.0101661  0.00320707 -0.00617465 -0.00801527
+force on top wall = 596.473
+total kinetic energy = 3276.04
+Pressure Applied: 0.561128
+Grains Kn: 3300.75
+Grains Ks: 2970.68
+
+-----------------------------------------------------------------------------------------
+Timestep 4501 of 60000 (7.50% complete, 35.15 minutes, ~433.37 remaining)
+height = 228.166
+top wall position:       0       0 228.166
+v/v0 = 0.898473
+stress =   0.0218325   0.0236191 -0.00559237 -0.00381986   0.0023019  0.00367228
+force on top wall = 359.226
+total kinetic energy = 1886.11
+Pressure Applied: 0.573877
+Grains Kn: 3375.75
+Grains Ks: 3038.18
+
+-----------------------------------------------------------------------------------------
+Timestep 4601 of 60000 (7.67% complete, 35.94 minutes, ~432.70 remaining)
+height = 228.066
+top wall position:       0       0 228.066
+v/v0 = 0.896078
+stress =   0.0177327   0.0163197    0.003717  0.00121569 -0.00852102   0.0156867
+force on top wall = 256.487
+total kinetic energy = 1196.26
+Pressure Applied: 0.586627
+Grains Kn: 3450.75
+Grains Ks: 3105.68
+
+-----------------------------------------------------------------------------------------
+Timestep 4701 of 60000 (7.83% complete, 36.73 minutes, ~432.06 remaining)
+height = 227.966
+top wall position:       0       0 227.966
+v/v0 = 0.893639
+stress =  0.0217374   0.014342 0.00468789 0.00289572 0.00727967  0.0071727
+force on top wall = 313.836
+total kinetic energy = 2862.15
+Pressure Applied: 0.599378
+Grains Kn: 3525.75
+Grains Ks: 3173.18
+
+-----------------------------------------------------------------------------------------
+Timestep 4801 of 60000 (8.00% complete, 37.52 minutes, ~431.43 remaining)
+height = 227.866
+top wall position:       0       0 227.866
+v/v0 = 0.89118
+stress =  0.00210261  0.00180987   0.0039762 -0.00246963  0.00373004   -0.011591
+force on top wall = 430.327
+total kinetic energy = 798.732
+Pressure Applied: 0.612128
+Grains Kn: 3600.75
+Grains Ks: 3240.68
+
+-----------------------------------------------------------------------------------------
+Timestep 4901 of 60000 (8.17% complete, 38.32 minutes, ~430.80 remaining)
+height = 227.766
+top wall position:       0       0 227.766
+v/v0 = 0.888715
+stress =  0.00349085   0.0092219   0.0115613 -0.00147872 -0.00287213 -0.00283549
+force on top wall = 646.343
+total kinetic energy = 2065.52
+Pressure Applied: 0.624877
+Grains Kn: 3675.75
+Grains Ks: 3308.18
+
+-----------------------------------------------------------------------------------------
+Timestep 5001 of 60000 (8.34% complete, 39.11 minutes, ~430.16 remaining)
+height = 227.666
+top wall position:       0       0 227.666
+v/v0 = 0.886238
+stress = -8.61468e-05    0.0240013    0.0103697   0.00234826 -0.000737038   0.00275076
+force on top wall = 356.432
+total kinetic energy = 787.742
+Pressure Applied: 0.637627
+Grains Kn: 3750.75
+Grains Ks: 3375.68
+
+-----------------------------------------------------------------------------------------
+Timestep 5101 of 60000 (8.50% complete, 39.91 minutes, ~429.56 remaining)
+height = 227.566
+top wall position:       0       0 227.566
+v/v0 = 0.883739
+stress =  0.0236609  0.0220203   0.012319 0.00449628 0.00165579 0.00798802
+force on top wall = 754.857
+total kinetic energy = 930.886
+Pressure Applied: 0.650377
+Grains Kn: 3825.75
+Grains Ks: 3443.18
+
+-----------------------------------------------------------------------------------------
+Timestep 5201 of 60000 (8.67% complete, 40.71 minutes, ~428.97 remaining)
+height = 227.466
+top wall position:       0       0 227.466
+v/v0 = 0.881263
+stress =   0.0109508     0.00217   0.0123227  0.00310797  0.00494728 -0.00351424
+force on top wall = 792.016
+total kinetic energy = 688.015
+Pressure Applied: 0.663127
+Grains Kn: 3900.75
+Grains Ks: 3510.68
+
+-----------------------------------------------------------------------------------------
+Timestep 5301 of 60000 (8.84% complete, 41.52 minutes, ~428.40 remaining)
+height = 227.366
+top wall position:       0       0 227.366
+v/v0 = 0.878838
+stress =   0.0106179   0.0136081  0.00508034 -0.00386523  0.00108688 -0.00392287
+force on top wall = 616.58
+total kinetic energy = 685.213
+Pressure Applied: 0.675878
+Grains Kn: 3975.75
+Grains Ks: 3578.18
+
+-----------------------------------------------------------------------------------------
+Timestep 5401 of 60000 (9.00% complete, 42.32 minutes, ~427.84 remaining)
+height = 227.266
+top wall position:       0       0 227.266
+v/v0 = 0.876455
+stress =   0.0159212   0.0215955  0.00925839  0.00188762 0.000920756  0.00629731
+force on top wall = 391.229
+total kinetic energy = 546.164
+Pressure Applied: 0.688627
+Grains Kn: 4050.75
+Grains Ks: 3645.68
+
+-----------------------------------------------------------------------------------------
+Timestep 5501 of 60000 (9.17% complete, 43.13 minutes, ~427.28 remaining)
+height = 227.166
+top wall position:       0       0 227.166
+v/v0 = 0.874161
+stress =    0.0230821    0.0120114    0.0084723 -0.000418445  -0.00141251  -0.00467816
+force on top wall = 448.623
+total kinetic energy = 717.813
+Pressure Applied: 0.701377
+Grains Kn: 4125.75
+Grains Ks: 3713.18
+
+-----------------------------------------------------------------------------------------
+Timestep 5601 of 60000 (9.34% complete, 43.94 minutes, ~426.73 remaining)
+height = 227.066
+top wall position:       0       0 227.066
+v/v0 = 0.871947
+stress =    0.0180137    0.0192091    0.0100103  0.000766677  -0.00122748 -0.000506701
+force on top wall = 332.603
+total kinetic energy = 1036.1
+Pressure Applied: 0.714128
+Grains Kn: 4200.75
+Grains Ks: 3780.68
+
+-----------------------------------------------------------------------------------------
+Timestep 5701 of 60000 (9.50% complete, 44.75 minutes, ~426.19 remaining)
+height = 226.966
+top wall position:       0       0 226.966
+v/v0 = 0.869756
+stress =   0.0238974   0.0147171  0.00984571 -0.00508229  0.00616276  0.00842401
+force on top wall = 617.669
+total kinetic energy = 969.561
+Pressure Applied: 0.726878
+Grains Kn: 4275.75
+Grains Ks: 3848.18
+
+-----------------------------------------------------------------------------------------
+Timestep 5801 of 60000 (9.67% complete, 45.56 minutes, ~425.66 remaining)
+height = 226.866
+top wall position:       0       0 226.866
+v/v0 = 0.867595
+stress =   0.0302755   0.0236612  0.00440277 -0.00559545  0.00743733  0.00267199
+force on top wall = 603.484
+total kinetic energy = 885.385
+Pressure Applied: 0.739627
+Grains Kn: 4350.75
+Grains Ks: 3915.68
+
+-----------------------------------------------------------------------------------------
+Timestep 5901 of 60000 (9.84% complete, 46.37 minutes, ~425.12 remaining)
+height = 226.766
+top wall position:       0       0 226.766
+v/v0 = 0.865512
+stress =  0.0205443  0.0291875  0.0103605 0.00721456 0.00282274 0.00600076
+force on top wall = 644.544
+total kinetic energy = 798.751
+Pressure Applied: 0.752377
+Grains Kn: 4425.75
+Grains Ks: 3983.18
+
+-----------------------------------------------------------------------------------------
+Timestep 6001 of 60000 (10.00% complete, 47.19 minutes, ~424.60 remaining)
+height = 226.666
+top wall position:       0       0 226.666
+v/v0 = 0.863436
+stress =   0.0328739   0.0229072   0.0220094  0.00363222  -0.0067328 -0.00856706
+force on top wall = 756.198
+total kinetic energy = 883.907
+Pressure Applied: 0.765127
+Grains Kn: 4500.75
+Grains Ks: 4050.68
+
+-----------------------------------------------------------------------------------------
+Timestep 6101 of 60000 (10.17% complete, 48.00 minutes, ~424.10 remaining)
+height = 226.566
+top wall position:       0       0 226.566
+v/v0 = 0.861412
+stress =   0.0220804   0.0250027   0.0129578 -0.00102096  0.00315333  -0.0100484
+force on top wall = 868.833
+total kinetic energy = 1324.94
+Pressure Applied: 0.777877
+Grains Kn: 4575.75
+Grains Ks: 4118.18
+
+-----------------------------------------------------------------------------------------
+Timestep 6201 of 60000 (10.34% complete, 48.82 minutes, ~423.57 remaining)
+height = 226.466
+top wall position:       0       0 226.466
+v/v0 = 0.859462
+stress =  0.0320188   0.034656  0.0185523  0.0021343 0.00995167  0.0212996
+force on top wall = 807.307
+total kinetic energy = 919.135
+Pressure Applied: 0.790627
+Grains Kn: 4650.75
+Grains Ks: 4185.68
+
+-----------------------------------------------------------------------------------------
+Timestep 6301 of 60000 (10.50% complete, 49.64 minutes, ~423.06 remaining)
+height = 226.366
+top wall position:       0       0 226.366
+v/v0 = 0.857472
+stress =   0.0281091   0.0344143   0.0269439 0.000149595  -0.0042527 -0.00876267
+force on top wall = 643.698
+total kinetic energy = 916.556
+Pressure Applied: 0.803377
+Grains Kn: 4725.75
+Grains Ks: 4253.18
+
+-----------------------------------------------------------------------------------------
+Timestep 6401 of 60000 (10.67% complete, 50.46 minutes, ~422.54 remaining)
+height = 226.266
+top wall position:       0       0 226.266
+v/v0 = 0.855533
+stress =   0.0306477   0.0292431   0.0169955  0.00728064 -0.00197909 -0.00171831
+force on top wall = 619.986
+total kinetic energy = 1140.9
+Pressure Applied: 0.816127
+Grains Kn: 4800.75
+Grains Ks: 4320.68
+
+-----------------------------------------------------------------------------------------
+Timestep 6501 of 60000 (10.84% complete, 51.28 minutes, ~422.02 remaining)
+height = 226.166
+top wall position:       0       0 226.166
+v/v0 = 0.853584
+stress =    0.0267733    0.0211506    0.0164668 -0.000583499    0.0011779  -0.00302729
+force on top wall = 831.149
+total kinetic energy = 924.651
+Pressure Applied: 0.828877
+Grains Kn: 4875.75
+Grains Ks: 4388.18
+
+-----------------------------------------------------------------------------------------
+Timestep 6601 of 60000 (11.00% complete, 52.11 minutes, ~421.52 remaining)
+height = 226.066
+top wall position:       0       0 226.066
+v/v0 = 0.851607
+stress =  0.0331429  0.0359883   0.024324  0.0071479 0.00285429 -0.0042629
+force on top wall = 1489.92
+total kinetic energy = 724.38
+Pressure Applied: 0.841627
+Grains Kn: 4950.75
+Grains Ks: 4455.68
+
+-----------------------------------------------------------------------------------------
+Timestep 6701 of 60000 (11.17% complete, 52.93 minutes, ~421.02 remaining)
+height = 225.966
+top wall position:       0       0 225.966
+v/v0 = 0.849608
+stress =    0.0359771    0.0268404    0.0278769   0.00488603 -0.000610119  -0.00385914
+force on top wall = 1006.23
+total kinetic energy = 675.905
+Pressure Applied: 0.854378
+Grains Kn: 5025.75
+Grains Ks: 4523.18
+
+-----------------------------------------------------------------------------------------
+Timestep 6801 of 60000 (11.34% complete, 53.76 minutes, ~420.52 remaining)
+height = 225.866
+top wall position:       0       0 225.866
+v/v0 = 0.847587
+stress =    0.0366156    0.0280901    0.0200364 -0.000832986  -0.00208651  -0.00280511
+force on top wall = 741.698
+total kinetic energy = 647.328
+Pressure Applied: 0.867127
+Grains Kn: 5100.75
+Grains Ks: 4590.68
+
+-----------------------------------------------------------------------------------------
+Timestep 6901 of 60000 (11.50% complete, 54.59 minutes, ~420.03 remaining)
+height = 225.766
+top wall position:       0       0 225.766
+v/v0 = 0.845557
+stress =   0.0354729   0.0348941   0.0152579  0.00236734  0.00626524 -0.00698384
+force on top wall = 1077.72
+total kinetic energy = 630.582
+Pressure Applied: 0.879877
+Grains Kn: 5175.75
+Grains Ks: 4658.18
+
+-----------------------------------------------------------------------------------------
+Timestep 7001 of 60000 (11.67% complete, 55.42 minutes, ~419.53 remaining)
+height = 225.666
+top wall position:       0       0 225.666
+v/v0 = 0.843544
+stress =   0.0480549   0.0345667   0.0281899  0.00449717 0.000196311   -0.007132
+force on top wall = 1040.29
+total kinetic energy = 648.963
+Pressure Applied: 0.892627
+Grains Kn: 5250.75
+Grains Ks: 4725.68
+
+-----------------------------------------------------------------------------------------
+Timestep 7101 of 60000 (11.84% complete, 56.25 minutes, ~419.04 remaining)
+height = 225.566
+top wall position:       0       0 225.566
+v/v0 = 0.841593
+stress =   0.0484896   0.0364607   0.0258045 -0.00172083  0.00212001 -0.00242497
+force on top wall = 966.094
+total kinetic energy = 707.574
+Pressure Applied: 0.905377
+Grains Kn: 5325.75
+Grains Ks: 4793.18
+
+-----------------------------------------------------------------------------------------
+Timestep 7201 of 60000 (12.00% complete, 57.09 minutes, ~418.56 remaining)
+height = 225.466
+top wall position:       0       0 225.466
+v/v0 = 0.839704
+stress =   0.0484928   0.0399267   0.0226291  0.00276051  0.00222535 -0.00599404
+force on top wall = 936.324
+total kinetic energy = 973.401
+Pressure Applied: 0.918127
+Grains Kn: 5400.75
+Grains Ks: 4860.68
+
+-----------------------------------------------------------------------------------------
+Timestep 7301 of 60000 (12.17% complete, 57.92 minutes, ~418.08 remaining)
+height = 225.366
+top wall position:       0       0 225.366
+v/v0 = 0.838205
+stress =   0.0952726   0.0775502   0.0205405  -0.0128369 -0.00172897 -0.00447614
+force on top wall = 956.594
+total kinetic energy = 51600.6
+Pressure Applied: 0.930877
+Grains Kn: 5475.75
+Grains Ks: 4928.18
+
+-----------------------------------------------------------------------------------------
+Timestep 7401 of 60000 (12.34% complete, 58.76 minutes, ~417.58 remaining)
+height = 225.266
+top wall position:       0       0 225.266
+v/v0 = 0.837473
+stress =  0.0607766  0.0982748  0.0488671  0.0183284  0.0129201 -0.0110671
+force on top wall = 1398.99
+total kinetic energy = 14635.3
+Pressure Applied: 0.943627
+Grains Kn: 5550.75
+Grains Ks: 4995.68
+
+-----------------------------------------------------------------------------------------
+Timestep 7501 of 60000 (12.50% complete, 59.59 minutes, ~417.09 remaining)
+height = 225.166
+top wall position:       0       0 225.166
+v/v0 = 0.836563
+stress =    0.0552816    0.0390593    0.0319192   -0.0062246   0.00427986 -0.000834361
+force on top wall = 1087.39
+total kinetic energy = 6512.27
+Pressure Applied: 0.956377
+Grains Kn: 5625.75
+Grains Ks: 5063.18
+
+-----------------------------------------------------------------------------------------
+Timestep 7601 of 60000 (12.67% complete, 60.43 minutes, ~416.57 remaining)
+height = 225.066
+top wall position:       0       0 225.066
+v/v0 = 0.835083
+stress =   0.0370293   0.0266096   0.0217424 -0.00154348 -0.00545065  0.00368891
+force on top wall = 187.548
+total kinetic energy = 3343.24
+Pressure Applied: 0.969127
+Grains Kn: 5700.75
+Grains Ks: 5130.68
+
+-----------------------------------------------------------------------------------------
+Timestep 7701 of 60000 (12.84% complete, 61.26 minutes, ~416.05 remaining)
+height = 224.966
+top wall position:       0       0 224.966
+v/v0 = 0.832921
+stress =   0.0441672   0.0301263   0.0184047  0.00972523 -0.00180124 -0.00371313
+force on top wall = 906.254
+total kinetic energy = 2069.91
+Pressure Applied: 0.981877
+Grains Kn: 5775.75
+Grains Ks: 5198.18
+
+-----------------------------------------------------------------------------------------
+Timestep 7801 of 60000 (13.00% complete, 62.10 minutes, ~415.54 remaining)
+height = 224.866
+top wall position:       0       0 224.866
+v/v0 = 0.830392
+stress =    0.0535284    0.0553478    0.0259073  -0.00202873   -0.0103752 -5.23648e-05
+force on top wall = 1157.91
+total kinetic energy = 1493.82
+Pressure Applied: 0.994627
+Grains Kn: 5850.75
+Grains Ks: 5265.68
+
+-----------------------------------------------------------------------------------------
+Timestep 7901 of 60000 (13.17% complete, 62.94 minutes, ~415.05 remaining)
+height = 224.766
+top wall position:       0       0 224.766
+v/v0 = 0.828006
+stress =  0.0606842  0.0605029  0.0304693 0.00165971 0.00220182 0.00969208
+force on top wall = 439.308
+total kinetic energy = 1525.82
+Pressure Applied: 1.00738
+Grains Kn: 5925.75
+Grains Ks: 5333.18
+
+-----------------------------------------------------------------------------------------
+Timestep 8001 of 60000 (13.34% complete, 63.79 minutes, ~414.56 remaining)
+height = 224.666
+top wall position:       0       0 224.666
+v/v0 = 0.825772
+stress =  0.0514142  0.0397828  0.0191912  0.0102384 0.00389645 0.00227946
+force on top wall = 119.766
+total kinetic energy = 1323.51
+Pressure Applied: 1.02013
+Grains Kn: 6000.75
+Grains Ks: 5400.68
+
+-----------------------------------------------------------------------------------------
+Timestep 8101 of 60000 (13.50% complete, 64.63 minutes, ~414.07 remaining)
+height = 224.566
+top wall position:       0       0 224.566
+v/v0 = 0.823563
+stress =  0.0448884  0.0634309  0.0104137 -0.0015039 -0.0130398  0.0129737
+force on top wall = 457.549
+total kinetic energy = 1170.93
+Pressure Applied: 1.03288
+Grains Kn: 6075.75
+Grains Ks: 5468.18
+
+-----------------------------------------------------------------------------------------
+Timestep 8201 of 60000 (13.67% complete, 65.48 minutes, ~413.58 remaining)
+height = 224.466
+top wall position:       0       0 224.466
+v/v0 = 0.821357
+stress =    0.0442265     0.068466     0.033043  -0.00121066 -0.000159754   -0.0121382
+force on top wall = 412.51
+total kinetic energy = 2294.31
+Pressure Applied: 1.04563
+Grains Kn: 6150.75
+Grains Ks: 5535.68
+
+-----------------------------------------------------------------------------------------
+Timestep 8301 of 60000 (13.84% complete, 66.33 minutes, ~413.11 remaining)
+height = 224.366
+top wall position:       0       0 224.366
+v/v0 = 0.819325
+stress =  0.0322229  0.0413921  0.0295331  0.0135599 0.00955496 -0.0118704
+force on top wall = 2532.88
+total kinetic energy = 1142.87
+Pressure Applied: 1.05838
+Grains Kn: 6225.75
+Grains Ks: 5603.18
+
+-----------------------------------------------------------------------------------------
+Timestep 8401 of 60000 (14.00% complete, 67.19 minutes, ~412.66 remaining)
+height = 224.266
+top wall position:       0       0 224.266
+v/v0 = 0.817175
+stress =  0.0487658  0.0770188  0.0285634  0.0115965 -0.0120356  0.0134799
+force on top wall = 1123.3
+total kinetic energy = 1161.65
+Pressure Applied: 1.07113
+Grains Kn: 6300.75
+Grains Ks: 5670.68
+
+-----------------------------------------------------------------------------------------
+Timestep 8501 of 60000 (14.17% complete, 68.04 minutes, ~412.20 remaining)
+height = 224.166
+top wall position:       0       0 224.166
+v/v0 = 0.815076
+stress =   0.0650509   0.0812283   0.0283878  -0.0012596 -0.00505651  0.00751273
+force on top wall = 565.783
+total kinetic energy = 1109.38
+Pressure Applied: 1.08388
+Grains Kn: 6375.75
+Grains Ks: 5738.18
+
+-----------------------------------------------------------------------------------------
+Timestep 8601 of 60000 (14.34% complete, 68.90 minutes, ~411.75 remaining)
+height = 224.066
+top wall position:       0       0 224.066
+v/v0 = 0.813066
+stress =   0.0505939   0.0633426   0.0332423 -0.00209777 -0.00650269   0.0131775
+force on top wall = 1460.63
+total kinetic energy = 1089.31
+Pressure Applied: 1.09663
+Grains Kn: 6450.75
+Grains Ks: 5805.68
+
+-----------------------------------------------------------------------------------------
+Timestep 8701 of 60000 (14.50% complete, 69.76 minutes, ~411.30 remaining)
+height = 223.966
+top wall position:       0       0 223.966
+v/v0 = 0.811101
+stress =   0.0382844   0.0777788   0.0349221  -0.0010698  -0.0100453 -0.00152247
+force on top wall = 1040.29
+total kinetic energy = 1136.67
+Pressure Applied: 1.10938
+Grains Kn: 6525.75
+Grains Ks: 5873.18
+
+-----------------------------------------------------------------------------------------
+Timestep 8801 of 60000 (14.67% complete, 70.63 minutes, ~410.86 remaining)
+height = 223.866
+top wall position:       0       0 223.866
+v/v0 = 0.809235
+stress =   0.0360713   0.0607214   0.0593819  0.00988047 -0.00515025 -0.00126391
+force on top wall = 1347.27
+total kinetic energy = 1069.36
+Pressure Applied: 1.12213
+Grains Kn: 6600.75
+Grains Ks: 5940.68
+
+-----------------------------------------------------------------------------------------
+Timestep 8901 of 60000 (14.84% complete, 71.49 minutes, ~410.42 remaining)
+height = 223.766
+top wall position:       0       0 223.766
+v/v0 = 0.807413
+stress =  0.0615106   0.063766  0.0460466 0.00831546 -0.0158298 -0.0141882
+force on top wall = 1319.72
+total kinetic energy = 1298.47
+Pressure Applied: 1.13488
+Grains Kn: 6675.75
+Grains Ks: 6008.18
