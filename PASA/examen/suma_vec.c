@@ -22,7 +22,7 @@ int main(int argc, char*argv[]) {
 	float t_serial, t_par, t_total;
 	struct timeval t_ii, t_i, t_s, t_f; 
 	
-	float *v1, *v2, *res
+	float *v1, *v2, *res;
 
 	gettimeofday(&t_ii, NULL); 
 
