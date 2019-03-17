@@ -24,6 +24,12 @@ __global__ void add_elements_kernel(float *d_input_1, float *d_input_2, float *d
 	}
 }
 
+void verifyInHost(float* v1, float* v2, int length){
+  for (int i = 0; i < length; i++) {
+		printf("%.2f, ", v1[i] + v2[i]); 
+  }
+  printf("\n");
+}
 
 int main(int argc, char *argv[])
 {
@@ -104,10 +110,3 @@ int main(int argc, char *argv[])
 
 	return 0;
 } 
-
-void verifyInHost(float* v1, float* v2, int length){
-  for (int i = 0; i < length; i++) {
-		printf("%.2f, ", v1[i] + v2[i]); 
-  }
-  printf("\n");
-}
