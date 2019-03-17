@@ -5,7 +5,7 @@
 #SBATCH --output=res.txt
 #SBATCH --export=ALL
 #SBATCH -p oro
-#SBATCH -w compute-0-[1]
+#SBATCH -w compute-0-[3]
 #SBATCH -n 24
 
 ulimit -l unlimited
