@@ -1,0 +1,23 @@
+Lino Mediavilla
+Evaluación Curso CUDA
+
+
+
+1. 
+La estrategia es diferente a los CPUs, 
+que lo hacen mediante varios niveles de caché.
+En una GPU, la latencia se oculta lanzando una 
+cantidad masiva de hilos. Cuando uno es bloqueado 
+porque necesita acceso a memoria, se da paso a otro 
+hilo hasta que llegue el dato.
+ 
+2. 
+Realiza una suma en una dirección de memoria con la 
+garantía de que sólo un hilo estará modificándola a la vez.
+Es necesaria cuando se tienen hilos concurrentes que necesitan
+actualizar una dirección de memoria y se podría incurrir en 'reace condition'
+
+3. 
+Un espacio de memoria compartido por todos los threads de 
+un bloque. El acceso es unas 100 veces más rápido comparado
+con el de la memoria global.
