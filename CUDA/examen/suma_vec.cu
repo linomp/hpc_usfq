@@ -13,7 +13,8 @@ __global__ void add_elements_kernel(float *d_input_1, float *d_input_2, float *d
 {
 	// qué thread soy?
 	// aplicando offset porque hay más bloques
-	int idx = blockDim.x * blockIdx.x + threadIdx.x;
+  //int idx = blockDim.x * blockIdx.x + threadIdx.x;
+  int idx = threadIdx.x;
 	// verificar, xq pueden lanzarse más hilos que elementos
 	if( idx < length ){ 
 		float res = d_input_1[idx] + d_input_2[idx];
@@ -31,7 +32,9 @@ int main(int argc, char *argv[])
 	float *d_input_1, *d_input_2, *d_output;
 	unsigned int size; 
 
-	int length = sizeof(v1)/sizeof(v1[0]);
+  int length = sizeof(v1)/sizeof(float);
+  printf("Length: %i", length);
+
 	size = length * sizeof(float);
 
 	// reservo memoria para h_input y h_output
@@ -49,7 +52,8 @@ int main(int argc, char *argv[])
 	cudaMemcpy(d_input_2, v2, size, cudaMemcpyHostToDevice); 
 
   // configurar la grilla de threads
-	dim3 blocksPerGrid ( (int) ceil(length/N), 1, 1) ;
+  //dim3 blocksPerGrid ( (int) ceil(length/N), 1, 1) ;
+  dim3 blocksPerGrid (1, 1, 1) ;
 	dim3 threadsPerBlock (N, 1, 1);
 
 	// ejecutar el kernel
