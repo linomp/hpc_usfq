@@ -28,7 +28,7 @@ int main(int argc, char** argv)
   }
   gettimeofday(&t_f, NULL);
 
-  double h = 2.234;
+  double h = 2.234; 
 
   for (int i = 0; i < iters; ++i)
   {

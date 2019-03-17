@@ -31,9 +31,11 @@ int main(int argc, char *argv[])
   float *h_output;
 	float *d_input_1, *d_input_2, *d_output;
 	unsigned int size; 
+  
+	float t_deviceToHost, t_kernel, t_hostToDevice;
+  struct timeval t_i, t_dth, t_k, t_htd; 
 
-  int length = sizeof(v1)/sizeof(float);
-  printf("Length: %i", length);
+  int length = sizeof(v1)/sizeof(float); 
 
 	size = length * sizeof(float);
 
@@ -47,30 +49,48 @@ int main(int argc, char *argv[])
   cudaMalloc(&d_input_2, size); 
   cudaMalloc(&d_output, size); 
 
-	// transferir el arreglo de entrada al dispositivo
+  // transferir el arreglo de entrada al dispositivo
+  gettimeofday(&t_i, NULL);
   cudaMemcpy(d_input_1, v1, size, cudaMemcpyHostToDevice);   
-	cudaMemcpy(d_input_2, v2, size, cudaMemcpyHostToDevice); 
+  cudaMemcpy(d_input_2, v2, size, cudaMemcpyHostToDevice); 
+  gettimeofday(&t_htd, NULL);
+
+  t_hostToDevice = (double)t_htd.tv_sec * 1000.0 + (double)t_htd.tv_usec / 1000.0 -
+           ((double)t_i.tv_sec * 1000.0 + (double)t_i.tv_usec / 1000.0);
 
   // configurar la grilla de threads
   //dim3 blocksPerGrid ( (int) ceil(length/N), 1, 1) ;
   dim3 blocksPerGrid (1, 1, 1) ;
 	dim3 threadsPerBlock (N, 1, 1);
 
-	// ejecutar el kernel
+  // ejecutar el kernel
+  gettimeofday(&t_i, NULL);
 	add_elements_kernel <<< blocksPerGrid, threadsPerBlock >>>( d_input_1, d_input_2, d_output, length );
 
-	// sólo para medir tiempos, porque el memcoy ya sincroniza internamente
-	cudaThreadSynchronize(); 
+	// sólo para medir tiempos, porque el memcopy ya sincroniza internamente
+  cudaThreadSynchronize(); 
+  gettimeofday(&t_k, NULL);
+  t_kernel = (double)t_k.tv_sec * 1000.0 + (double)t_k.tv_usec / 1000.0 -
+           ((double)t_i.tv_sec * 1000.0 + (double)t_i.tv_usec / 1000.0);
 
 	// transferir el contenido de d_output a la memoria de la CPU
-	cudaMemcpy(h_output, d_output, size, cudaMemcpyDeviceToHost); 
+  gettimeofday(&t_i, NULL);
+  cudaMemcpy(h_output, d_output, size, cudaMemcpyDeviceToHost); 
+  gettimeofday(&t_dth, NULL);
+  t_deviceToHost = (double)t_dth.tv_sec * 1000.0 + (double)t_dth.tv_usec / 1000.0 -
+           ((double)t_i.tv_sec * 1000.0 + (double)t_i.tv_usec / 1000.0);
 
-	printf("Suma:\n");
-
+	printf("Suma (GPU):\n");
 	for (int i = 0; i < length; i++) {
 		printf("%.2f, ", (float)h_output[i]); 
 	}
-	printf("\n");
+  printf("\n");
+  
+  printf("Suma (Host):\n");
+  verifyInHost(v1, v2, length);
+
+  printf("\nTiempo transf. host-to-device %f ms\nTiempo kernel %f ms\nTiempo transf. device-to-host % f ms\n ", t_hostToDevice, t_kernel, t_deviceToHost);
+
 
 	// liberar memoria en el dispositivo para d_input y d_output
   cudaFree(d_input_1); 
@@ -83,3 +103,10 @@ int main(int argc, char *argv[])
 
 	return 0;
 } 
+
+void verifyInHost(float* v1, float* v2, int length){
+  for (int i = 0; i < length; i++) {
+		printf("%.2f, ", v1[i] + v2[i]); 
+  }
+  printf("\n");
+}
