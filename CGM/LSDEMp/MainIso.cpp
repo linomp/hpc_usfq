@@ -181,11 +181,11 @@ void runIso(string testID, double pp){
 	fileName = "wallsBallsBackups/lastWallPos_iso_" +  testID + ".dat";
     FILE * lastWallPos_backup = fopen(fileName.c_str(),"w");
 	
-    size_t tiso = 6.0e4; //150; //1.5e5; // FIXME
+    size_t tiso = 5.0e3; //150; //1.5e5; // FIXME
     size_t tcomp = 0;
     // ramp pressure slowly
-    size_t tramp = 4e4;//2e5;
-    size_t ttopMove = 1e4;//2.75e4;
+    size_t tramp = 3e3;//2e5;
+    size_t ttopMove = 1e3;//2.75e4;
     double disp = -0.001;//- 0.001;
     
     /*fprintf(params,"Simulation Time: %f \ntop wall displacement rate: %f \ntop wall displacement time = %f \nPressure: %f \nRadius Increment: %f", (double)tiso, disp, (double)ttopMove, pressure, radiusInc);
