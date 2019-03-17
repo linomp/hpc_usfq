@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #SBATCH --job-name="iso_linomp"
-#SBATCH --output="iso_compress_1000clones.%j"
+#SBATCH --output="iso_results.txt"
 #SBATCH --output=res.txt
 #SBATCH --export=ALL
 #SBATCH -p oro
-#SBATCH -w compute-0-[3]
+#SBATCH -w compute-0-[7]
 #SBATCH -n 24
 
 ulimit -l unlimited
