@@ -2,6 +2,7 @@
 
 #SBATCH --job-name="iso_compress_1000clones"
 #SBATCH --output="iso_compress_1000clones.%j"
+#SBATCH --output=res.txt
 #SBATCH --export=ALL
 #SBATCH -p oro
 #SBATCH -w compute-0-[1]

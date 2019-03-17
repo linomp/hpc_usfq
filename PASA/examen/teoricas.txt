@@ -1,23 +1,45 @@
 Lino Mediavilla
-Evaluación Curso CUDA
+Evaluación Curso PASA
+
+** Parte 2 **
+
+Al correr el archivo submit_omp.sh en el cluster se obtienen
+los siguientes resultados 
+
+Hilos: 2
+Speedup: 0.323535
+Eficiencia: 0.161768
+Tiempo serial: 56.559082 ms
+Tiempo paralelo: 38.605957 ms
+Tiempo total 174.815918 ms
+
+Hilos: 4
+Speedup: 0.329999
+Eficiencia: 0.082500
+Tiempo serial: 56.632080 ms
+Tiempo paralelo: 20.878906 ms
+Tiempo total 171.612793 ms
+
+Hilos: 8
+Speedup: 0.369083
+Eficiencia: 0.046135
+Tiempo serial: 56.671875 ms
+Tiempo paralelo: 11.187988 ms
+Tiempo total 153.547852 ms
+
+Hilos: 16
+Speedup: 0.384749
+Eficiencia: 0.024047
+Tiempo serial: 56.843994 ms
+Tiempo paralelo: 8.016113 ms
+Tiempo total 147.743164 ms
+
+
+** Parte 3 **
+Sí existe, dentro de BLAS 1 para operaciones de orden n
 
 
 
-1. 
-La estrategia es diferente a los CPUs, 
-que lo hacen mediante varios niveles de caché.
-En una GPU, la latencia se oculta lanzando una 
-cantidad masiva de hilos. Cuando uno es bloqueado 
-porque necesita acceso a memoria, se da paso a otro 
-hilo hasta que llegue el dato.
- 
-2. 
-Realiza una suma en una dirección de memoria con la 
-garantía de que sólo un hilo estará modificándola a la vez.
-Es necesaria cuando se tienen hilos concurrentes que necesitan
-actualizar una dirección de memoria y se podría incurrir en 'reace condition'
 
-3. 
-Un espacio de memoria compartido por todos los threads de 
-un bloque. El acceso es unas 100 veces más rápido comparado
-con el de la memoria global.
+
+

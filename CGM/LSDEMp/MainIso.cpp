@@ -11,14 +11,16 @@
 
 void runIso(string, double);
 
-int main(int argc, char * argv[]){    	 
+int main(int argc, char * argv[]){ 
+    // comunicaion entre los nodos   	 
 	MPI_Init(&argc, &argv);
 	int numprocessors, rank;
 	MPI_Comm_size(MPI_COMM_WORLD, &numprocessors);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank); 
 	char name[50]; int count;
 	MPI_Get_processor_name(name, &count);
-	
+
+    // If I am master node...
 	if (rank == 0) {
 	   cout << "Using " << numprocessors << " nodes with " << omp_get_max_threads()  << " threads/node for a total of " << numprocessors*omp_get_max_threads() << " processes." << endl;
 	}
@@ -33,6 +35,8 @@ void runIso(string testID, double pp){
 	int numprocessors, rank; 
 	MPI_Comm_size(MPI_COMM_WORLD, &numprocessors);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank); 
+
+    // If I am master node...
 	if (rank == 0) {
 		cout << "Running MainCycIso" << endl;
 		cout << "Using " << numprocessors << " node." <<  endl;
@@ -44,6 +48,8 @@ void runIso(string testID, double pp){
 
     //vector<Grain3d> grains = generateGrainsFromFile("jaramijo23-01-19.dat");
     Vector3d translation(-245.4364,-245.6927,0.0);
+
+    // could be parallelized!!
     for (size_t i = 0; i < ngrains; i++) {
         grains[i].moveGrain(translation);
     }
@@ -55,7 +61,7 @@ void runIso(string testID, double pp){
         //grains[g-1].changeKn(1e4);
     }*/ 
         
-    // find maximum radius and height
+    // find maximum radius and height (offset to ensure the sample lies on the xy plane smoothly)
     double maxr = 0;
     double maxh = 0;
     double minh = 1e3; // ADDED VARIABLE
@@ -243,7 +249,7 @@ void runIso(string testID, double pp){
                 //logFile << "top wall position: " << world.getWalls()[1].getPosition().transpose() << endl;
                 //logFile << "v/v0 = " << world.getWallBalls().findVolume()/v0 << endl;
                 //logFile << "stress = " << (world.getGrainState()._stressVoigt) << endl;
-		//logFile << "force on top wall = " << world.getWallState()._wallForces[1](2) << endl;
+		        //logFile << "force on top wall = " << world.getWallState()._wallForces[1](2) << endl;
 				double ke = 0;
 				for (size_t i = 0; i < world.getGrains().size(); i++) {
 					ke += world.getGrains()[i].computeKineticEnergy();
