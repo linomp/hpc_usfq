@@ -61,10 +61,10 @@ int main(int argc, char *argv[])
 	// transferir el contenido de d_output a la memoria de la CPU
 	cudaMemcpy(h_output, d_output, size, cudaMemcpyDeviceToHost); 
 
-	printf("Texto desencriptado:\n");
+	printf("Suma:\n");
 
 	for (int i = 0; i < length; i++) {
-		printf("%.2f", (float)h_output[i]); 
+		printf("%.2f, ", (float)h_output[i]); 
 	}
 	printf("\n");
 
