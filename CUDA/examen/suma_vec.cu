@@ -69,7 +69,9 @@ int main(int argc, char *argv[])
 	printf("\n");
 
 	// liberar memoria en el dispositivo para d_input y d_output
-  cudaFree(d_input); cudaFree(d_output); 
+  cudaFree(d_input_1); 
+  cudaFree(d_input_2);
+  cudaFree(d_output); 
   
 	/* free host buffers */
 	//free(v1);
