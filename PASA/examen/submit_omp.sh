@@ -9,19 +9,16 @@
 #SBATCH --time=1:00
 
 
-srun gcc -std=c99 -fopenmp evaluar_func.c -o ahmdal.exe -lm
+srun gcc -std=c99 -fopenmp suma_vec.c -o suma.exe -lm
 
 export OMP_NUM_THREADS=2
-srun ./ahmdal.exe 2
+srun ./suma.exe 2
 
 export OMP_NUM_THREADS=4
-srun ./ahmdal.exe 4
+srun ./suma.exe 4
 
 export OMP_NUM_THREADS=8
-srun ./ahmdal.exe 8
+srun ./suma.exe 8
 
 export OMP_NUM_THREADS=16
-srun ./ahmdal.exe 16
-
-export OMP_NUM_THREADS=32
-srun ./ahmdal.exe 32
+srun ./suma.exe 16 
