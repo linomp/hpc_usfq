@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name="iso_linomp"
-#SBATCH --output="iso_results.txt"
+#SBATCH --job-name="iso_linomp" 
 #SBATCH --output=res.txt
 #SBATCH --export=ALL
 #SBATCH -p oro
@@ -14,4 +13,4 @@ export OMP_NUM_THREADS=24
 
 #mpiCC -fopenmp -I ~/eigen -o mainISO MainIso.cpp
 
-mpirun -np 1 -x OMP_NUM_THREADS=24 mainISO
+/usr/lib64/openmpi/bin/mpirun -np 1 -x OMP_NUM_THREADS=24 mainISO
