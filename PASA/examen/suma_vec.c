@@ -1,9 +1,8 @@
 // 
-#include <omp.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <sys/time.h>
+#include <sys/time.h> 
 
 #define N 10000000
 void printSum(float* sum, int length){
